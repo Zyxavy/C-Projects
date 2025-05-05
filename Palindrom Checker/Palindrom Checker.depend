@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1726750405 source:d:\programs\programs\palindrom checker\main.c
+	<stdio.h>
+	<math.h>
+	<windows.h>
+

@@ -1,0 +1,9 @@
+CHARACTER SETTINGS:
+Race: Wizard
+Type: Melee
+STATS:
+Base Damage: 35
+Base Defense: 16
+Strenght: 28
+Agility: 18
+Intelligence: 12

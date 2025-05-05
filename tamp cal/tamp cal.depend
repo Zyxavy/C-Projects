@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1720857535 source:d:\codeblocks\programs\tamp cal\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+

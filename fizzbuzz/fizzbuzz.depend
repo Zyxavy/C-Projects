@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1720874607 source:d:\codeblocks\programs\fizzbuzz\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+
