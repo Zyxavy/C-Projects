@@ -1,9 +1,9 @@
 CHARACTER SETTINGS:
-Race: Wizard
-Type: Melee
+Race: Gnome
+Type: Magic
 STATS:
-Base Damage: 35
-Base Defense: 16
-Strenght: 28
-Agility: 18
-Intelligence: 12
+Base Damage: 17
+Base Defense: 40
+Strenght: 15
+Agility: 13
+Intelligence: 26
