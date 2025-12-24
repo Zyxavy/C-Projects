@@ -483,7 +483,7 @@ void lvlup(struct Player *player){
         player->total_hp += 2;
         printf("\t\t\t\tYou are now level %d\n", player->level);
         player->sub_level = 0;
-        return player->level;
+
     }
 }
 

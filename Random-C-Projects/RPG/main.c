@@ -1,4 +1,3 @@
-// game.h
 #ifndef GAME_H
 #define GAME_H
 
@@ -88,8 +87,6 @@ void parse_command(Player* player, MapTile map[MAX_MAP_SIZE][MAX_MAP_SIZE], char
 
 #endif
 
-// game.c
-#include "game.h"
 
 void init_game(Player* player, MapTile map[MAX_MAP_SIZE][MAX_MAP_SIZE]) {
     // Initialize player
@@ -102,6 +99,7 @@ void init_game(Player* player, MapTile map[MAX_MAP_SIZE][MAX_MAP_SIZE]) {
     player->quest_count = 0;
     player->x = 0;
     player->y = 0;
+    player->total_dmg = 20;
 
     // Initialize map
     for (int i = 0; i < MAX_MAP_SIZE; i++) {
@@ -383,8 +381,6 @@ void parse_command(Player* player, MapTile map[MAX_MAP_SIZE][MAX_MAP_SIZE], char
     }
 }
 
-// main.c
-#include "game.h"
 
 int main(int argc, char* argv[]) {
     Player player;
