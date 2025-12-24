@@ -6,8 +6,8 @@ This repository is a collection of my old C programs and projects that I created
 
 ---
 
-## Updated
+## Updated (Dec-24-2025)
 
 - The directory `C-modern-approach-projects` is a collection of my exercises and projects following the book **C-Programming: A Modern Approach 2nd edition by K.N KING**.
 
-- The directory `SICP-exercises` is a collection of my exercises  following the book **Structure and Interpretations of Computer Programs**.
+- The directory `SICP-exercises` is a collection of exercises following the book **Structure and Interpretations of Computer Programs**, though instead of Scheme, I will be translating them into C.
