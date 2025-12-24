@@ -1,9 +1,0 @@
-# depslib dependency file v1.0
-1723102053 source:d:\programs\programs\textbasedrpg\main.c
-	<stdio.h>
-	<stdlib.h>
-	<string.h>
-	<math.h>
-	<unistd.h>
-	<time.h>
-

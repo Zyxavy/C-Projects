@@ -1,8 +1,0 @@
-# depslib dependency file v1.0
-1720349168 source:d:\codeblocks\programs\gnomes\main.c
-	<stdio.h>
-	<stdlib.h>
-	<math.h>
-	<string.h>
-	<unistd.h>
-

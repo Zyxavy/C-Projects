@@ -1,7 +1,0 @@
-# depslib dependency file v1.0
-1724165010 source:d:\programs\programs\snek\main.c
-	<stdio.h>
-	<conio.h>
-	<stdlib.h>
-	<windows.h>
-
