@@ -4,6 +4,17 @@
 ---
 This repository is a collection of my old C programs and projects that I created when I first started coding back in july of 2024. It's mostly just random programs that may or may not work, and projects that I lost motivation to complete or got stuck on some problem and just scrapped it.
 
+***Note:*** Due to re-structuring, .exe files were removes so you may need to compile them.
+
+```bash
+gcc [file Name] -o {any executable name}
+
+#or if the project is a game
+gcc -O3 [file Name)] -o {any executable name}
+
+#then run
+./{executable name}
+```
 ---
 
 ## Updated (Dec-24-2025)
