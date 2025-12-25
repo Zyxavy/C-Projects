@@ -10,7 +10,7 @@ This repository is a collection of my old C programs and projects that I created
 gcc [file Name] -o {any executable name}
 
 #or if the project is a game
-gcc -O3 [file Name)] -o {any executable name}
+gcc -O3 [file Name] -o {any executable name}
 
 #then run
 ./{executable name}
