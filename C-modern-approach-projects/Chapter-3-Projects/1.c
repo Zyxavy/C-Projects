@@ -14,7 +14,7 @@ int main(void)
     printf("Enter a Date (mm/dd/yyyy): ");
     scanf("%d/%d/%d", &month, &day, &year);
 
-    printf("You entered the date: %d%.2d%d", year,month,day);
+    printf("You entered the date: %d%.2d%.2d", year,month,day);
 
     return 0;
 }
