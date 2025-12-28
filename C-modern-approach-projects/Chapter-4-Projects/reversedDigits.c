@@ -12,10 +12,16 @@ is the last digit in n and n / 10 is n with thc last digit removed.
 
 int main(void)
 {
-    int fDigit, lDigit;
+    int fDigit, lDigit, flDigit;
 
     printf("Enter a two-digit number: ");
-    scanf("%1d%1d", &fDigit, &lDigit);
+    scanf("%d", &flDigit);
+
+    lDigit = flDigit % 10;
+    flDigit = flDigit / 10;
+    fDigit = flDigit % 10;
+    flDigit = flDigit / 10;
+
     printf("\nThe reversal is: %d%d", lDigit, fDigit);
 
     return 0;
