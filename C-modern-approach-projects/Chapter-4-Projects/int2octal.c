@@ -39,7 +39,6 @@ int main(void)
     base10 /= 8;
     printf("r1: %d | base10: %d\n", r5, base10);
 
-
     printf("Octal form: %d%d%d%d%d", r5,r4,r3,r2,r1);
     
 

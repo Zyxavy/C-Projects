@@ -26,7 +26,6 @@ int mul(int a,int b)
     
 }
 
-
 int main(void)
 {
     int ti = mul(1234,1234);
