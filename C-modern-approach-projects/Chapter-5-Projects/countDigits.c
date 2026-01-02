@@ -15,6 +15,6 @@ int main(void)
 
     printf("Enter a number: ");
     scanf("%d", &digit);
-    printf("The number %d has %d digits.", digit, digit > 0 && digit < 10 ? 1 : digit > 10 && digit < 99 ? 2 : 3);
+    printf("The number %d has %d digits.", digit, digit > 0 && digit < 10 ? 1 : digit > 10 && digit < 99 ? 2 : digit > 100 && digit < 999 ? 3 : 4);
    
 }
