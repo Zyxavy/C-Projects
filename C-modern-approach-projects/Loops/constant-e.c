@@ -26,7 +26,7 @@ int factorial(int n)
 int main(void)
 {
     int n;
-    double e = 1.0;
+    double e = 1.0L;
     printf("Enter n: ");
     scanf("%d", &n);
 
@@ -35,7 +35,7 @@ int main(void)
         double num = 1.0 / (factorial(i));
         e += num;
     }
-    printf("e = %f", e);
+    printf("e = %.40lf", e);
 
     return 0;
 }
