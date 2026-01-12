@@ -67,7 +67,8 @@ void timed_prime_test(long n)
     double elapsed = (double)(end.QuadPart - start.QuadPart) / freq.QuadPart;
     
     printf("\n%ld", n);
-    if (prime) {
+    if (prime) 
+    {
         printf(" *** %.10f", elapsed);
     }
 }
