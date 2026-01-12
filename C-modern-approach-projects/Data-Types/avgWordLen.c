@@ -30,3 +30,5 @@ int main(void)
     printf("Average word length: %.1f", avgWordLen);
     return 0;
 }
+
+//TTC: 11:30
