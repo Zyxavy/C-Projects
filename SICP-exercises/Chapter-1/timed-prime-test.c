@@ -66,10 +66,9 @@ void timed_prime_test(long n)
     QueryPerformanceCounter(&end);
     double elapsed = (double)(end.QuadPart - start.QuadPart) / freq.QuadPart;
     
-    printf("\n%ld", n);
     if (prime) 
     {
-        printf(" *** %.10f", elapsed);
+        printf("%ld *** %.10f\n", n, elapsed);
     }
 }
 
