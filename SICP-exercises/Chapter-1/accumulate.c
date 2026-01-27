@@ -49,7 +49,7 @@ long accumulate(char combiner, int nullVal, long term, long a, long next, long b
 int main(void)
 {
     int n = 5;
-    printf("Sum of 1 - n: %ld\n", accumulate('+', 1, 1, 1, 2, n));
+    printf("Sum of 1 - n: %ld\n", accumulate('+', 0, 1, 1, 2, n));
     printf("Product of 1 - n: %ld", accumulate('*', 1, 1, 1, 2, n));
     return 0;
 }
