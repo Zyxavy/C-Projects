@@ -34,13 +34,13 @@ Y is blocked on all four sides, so there’s no place to put Z
 #include <stdbool.h>
 #include <time.h>
 
-#define SQR_HEIGHT sizeof(square) / sizeof(square[0])
-#define SQR_WIDTH sizeof(square[0]) / sizeof(square[0][0])
+#define SQR_HEIGHT 10
+#define SQR_WIDTH 10
 #define ALPHABET 26
 
 int main(void)
 {
-    char square[10][10];
+    char square[SQR_HEIGHT][SQR_WIDTH];
 
     for (size_t i = 0; i < SQR_HEIGHT; i++) 
     {
@@ -50,27 +50,44 @@ int main(void)
         }
     }
 
-    square[0][0] = 'A';
-    for (size_t i = 0; i < ALPHABET; i++)
+    char letter = 'A';
+    int x=0, y=0;
+    square[x][y] = letter;
+    srand(time(0));
+
+    for (size_t i = 1; i < ALPHABET; i++)
     {
         bool isValid = false;
+        int attempts = 0, maxAttempts = 50;
+
         do{
-            srand(time(0));
+            int newX = x, newY = y;
             int direction = rand() % 4;
             switch (direction)
             {
-                case 0: //UP
-                case 1: //Down
-                case 2: //Left
-                case 3: //Right
+                case 0: newX = x - 1; break; //UP
+                case 1: newX = x + 1; break; //DOWN
+                case 2: newY = y - 1; break; //LEFT
+                case 3: newY = y + 1; break; //RIGHT
             }
+
+            if((newX >= 0 && newX < SQR_HEIGHT) && (newY >= 0 && newY < SQR_WIDTH))
+            {
+                if(square[newX][newY] == '.')
+                {
+                    letter++;
+                    square[newX][newY] = letter;
+                    y = newY;
+                    x = newX;
+                    isValid = true;
+                }
+            }
+            attempts++;
+            if(attempts > maxAttempts) break;
+
         } while(!isValid);
-        
-    }
-    
 
-
-
+    }  
 
     for(size_t i = 0; i < SQR_HEIGHT; i++)
     {
