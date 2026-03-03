@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 
 int calcPolynomial(int x);
 
@@ -15,5 +16,5 @@ int main(void)
 
 int calcPolynomial(int x)
 { 
-  return (3 * (x * x * x * x * x)) + (2 * (x * x * x * x) ) - (5 *(x * x * x)) - (1 * (x * x)) + (7 * x) - 6;
+  return (3 * pow(x, 5)) + (2 * pow(x, 4) ) - (5 * pow(x, 3) ) - (1 * pow(x,2) ) + (7 * x) - 6;
 }
