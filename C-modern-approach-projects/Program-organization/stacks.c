@@ -4,6 +4,18 @@
 
 #define STACK_SIZE 100
 
+
+//Incomplete: 
+/*
+ *turn the input into a string, read the string by chars, if char == '( {', then push.
+
+  into another loop, read the string by chars, if char == '} )', pop.
+
+  if empty == properly nested
+  if not == not properly nested
+ *
+ */  
+
 char contents[STACK_SIZE];
 int top = 0;
 
@@ -19,25 +31,16 @@ int main(void)
   printf("Enter parenthesis and/or braces: ");
   while((ch = getchar()) != '\n')
   {
-    if(ch != '{' || ch != '}' || ch != '(' || ch != ')')
-    {
-      printf("Invalid input!\n");
-      break;
-    }
     
     if(ch == '(' || ch == '{')
     {
       push(ch);
     }
-    else if(ch == ')' || ch == '}')
-    {
-      pop();
-    }
   }
 
   while(!isEmpty())
   {
-    printf(" %c", pop());
+    if()
   }
 
   if(isEmpty())
