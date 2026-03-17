@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <time.h>
 #include <stdbool.h>
 
@@ -7,7 +8,7 @@ bool playGame(void);
 
 int main(void)
 {
-  srand(time(NULL));
+  srand(time(0));
   playGame();
 }
 
@@ -46,8 +47,8 @@ bool playGame(void)
     }
     else 
     {
-      do{
-
+      do
+      {
         points += sum;
         printf("You point: %d\n", points);
         sum = rollDice();
@@ -56,13 +57,11 @@ bool playGame(void)
         {
           printf("You lose!\n");
           losses++;
+          break;
         }
 
       } while (sum != points || sum != 7);
     }
-
-
-
   }
   
   printf("Wins: %d, Losses: %d\n", wins, losses);
